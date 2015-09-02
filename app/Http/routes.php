@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('construction');
-});
+Route::get('/', 'ConstructionController@underConstruction');
+Route::get('/test', 'ConstructionController@testPage');
