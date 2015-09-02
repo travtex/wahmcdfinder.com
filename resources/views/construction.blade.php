@@ -80,7 +80,7 @@
                 <h4 class="motto">Coming Soon.</h4>
                 <div class="subscribe">
                     <h5 class="info-text">
-                      Join the mailing list. We keep you posted. 
+                      Join the mailing list. We'll keep you posted. 
                     </h5>
                     <div class="row">
                         <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 ">
