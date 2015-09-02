@@ -4,6 +4,8 @@ Made with love by Creative Tim (http://www.creative-tim.com)
 
 */
 
+@import url(https://fonts.googleapis.com/css?family=Gochi+Hand);
+
 body{
     
 }
@@ -361,13 +363,28 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .navbar-nav > li > a {
     margin-top: 13px;
     margin-bottom: 13px;
-    padding-bottom: 12px;
-    padding-top: 12px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
     font-size: 16px;
 }
 .navbar-nav > li > a [class^="fa"]{
-    font-size: 22px;
+    font-size: 24px;
 }
+
+.navbar-nav > li > a i.fa-facebook-square:hover {
+    /*color: #3b5998;*/
+}
+
+.navbar-nav > li > a i.fa-twitter:hover {
+    /*color: #00aced;*/
+}
+
+.navbar-nav > li > a i.fa-pinterest:hover {
+    /*color: #cb2027;*/
+}
+
 .navbar-brand{
     padding: 20px 15px;
 }
@@ -723,11 +740,11 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     position: relative;
     text-align: center;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.33);
-    margin-top: 150px;
+    margin-top: 15%;
     z-index: 3;
 }
 .main .logo.cursive{
-    font-family: 'Grand Hotel',cursive;
+    font-family: 'Gochi Hand';
     font-size: 82px;
     
 }
@@ -736,19 +753,20 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     z-index: 4;
 }
 .main .motto{
-    min-height: 140px;
+    min-height: 50px;
 }
 .main .motto, .main .subscribe .info-text{
     font-size: 28px;
     color: #FFFFFF;
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.66);
     text-align: center;
-    margin-top: 50px;
+    margin-top: 40px;
     
 }
 .main .subscribe .info-text{
     font-size: 18px;
     margin-bottom: 30px;
+    margin-top: 0px;
 }
 #video_background {
     position: fixed;

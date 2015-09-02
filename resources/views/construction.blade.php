@@ -34,18 +34,27 @@
           
           <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a href="#"> 
-                        <i class="fa fa-facebook-square"></i>
+                    <a href="#">
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-square fa-stack-1x" style="color:transparent; font-size:22px;"></i>
+                        <i class="fa fa-facebook-square fa-stack-1x"></i>
+                      </span>
                     </a>
                 </li>
                  <li>
                     <a href="#"> 
-                        <i class="fa fa-twitter"></i>
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-1x" style="color:transparent; font-size:22px;"></i>
+                        <i class="fa fa-twitter fa-stack-1x"></i>
+                      </span>
                     </a>
                 </li>
                  <li>
                     <a href="#"> 
-                        <i class="fa fa-pinterest"></i>
+                      <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-1x" style="color:transparent; font-size:22px;"></i>
+                        <i class="fa fa-pinterest fa-stack-1x"></i>
+                      </span>
                     </a>
                 </li>
            </ul>
@@ -60,11 +69,11 @@
                 Video not supported 
             </video>
     <!--    Change the image source '/images/video_bg.jpg')" with your favourite image.     -->
-        <div class="cover blue" data-color="blue"></div>  
+        <div class="cover green" data-color="green"></div>  
     <!--   You can change the black color for the filter with those colors: blue, green, red, orange       -->
         <div class="container">
             <h1 class="logo cursive">
-                WAHM CD Finder
+                WAHM CD<br/>Finder
             </h1>
     <!--  H1 can have 2 designs: "logo" and "logo cursive"           -->         
             <div class="content">
@@ -80,7 +89,7 @@
                                 <label class="sr-only" for="joinMailingList">Email address</label>
                                 <input type="email" class="form-control transparent" placeholder="Your email here..." style="width:100%;">
                               </div>
-                              <button type="submit" class="btn btn-warning btn-fill">Notify Me</button>
+                              <button type="submit" class="btn btn-success btn-fill">Notify Me</button>
                             </form>
 
                         </div>
@@ -96,6 +105,33 @@
      </div>
    <script src="js/vendor.js"></script>
    <script src="js/app.js"></script>
+   <script>
+      $('.navbar-nav li a').hover(
+        function() {
+          var link = $(this).find('i:nth-child(2)');
+          var stackIcon = link.prev();
+          var color;
+          var bgColor;
+          if (link.hasClass('fa-facebook-square')) {
+            color = "#3b5998";
+            bgColor = "#ffffff";
+          } else if (link.hasClass('fa-twitter')) {
+            color = "#00aced";
+            bgColor = "transparent";
+          } else if (link.hasClass('fa-pinterest')) {
+            color = "#cb2027";
+            bgColor = "#ffffff";
+          };
+          link.css('color', color);
+          stackIcon.css('color', bgColor);
+        }, function() {
+          var link = $(this).find('i');
+          var stackIcon = link.prev();
+          link.css('color', '#ffffff');
+          stackIcon.css('color', 'transparent');
+        }
+      );
+   </script>
   </body>
    
 </html>
