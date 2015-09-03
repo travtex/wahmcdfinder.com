@@ -26,7 +26,7 @@
       
       <ul class="nav navbar-nav navbar-right">
             <li>
-                <a href="#">
+                <a href="https://www.facebook.com/wahmcdfinder" target="_blank">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-square fa-stack-1x" style="color:transparent; font-size:22px;"></i>
                     <i class="fa fa-facebook-square fa-stack-1x"></i>
