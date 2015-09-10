@@ -27,5 +27,5 @@
 
     @yield('bottom-scripts')
 </body>
-  
+
 </html>

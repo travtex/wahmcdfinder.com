@@ -83,7 +83,6 @@
                           </div>
                           <button type="submit" class="btn btn-success btn-fill">Notify Me</button>
                         </form>
-
                     </div>
                 </div>
             </div>

@@ -10,10 +10,8 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
 Route::get('/', 'ConstructionController@underConstruction');
 Route::get('/test', 'ConstructionController@testPage');
-
 
 // Authentication Routes...
 
